@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-50: #f3faeb;
+  --color-brand-100: #e3f4d3;
+  --color-brand-200: #c8e8ab;
+  --color-brand-300: #a6d77c;
+  --color-brand-400: #86c253;
+  --color-brand-500: #67a636;
+  --color-brand-600: #508328;
+  --color-brand-700: #3e6521;
+  --color-brand-800: #33501e;
+  --color-brand-900: #2a421a;
+  --color-brand-950: #13230a;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply tracking-tight;
+  }
+  
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.subtle-grid {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, #00000005 1px, transparent 1px);
+}
+
