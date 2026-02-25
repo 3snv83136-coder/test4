@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Droplets } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import { getVillesByDepartment } from '../data/villesGeo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const [varOpen, setVarOpen] = useState(false);
+  const [valDoiseOpen, setValDoiseOpen] = useState(false);
   const villesVar = getVillesByDepartment('var');
   const villesValDoise = getVillesByDepartment('val-doise');
 
@@ -54,32 +57,52 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Index géographique Var & Val-d'Oise – pages cas pratiques par ville */}
+        {/* Index géographique Var & Val-d'Oise – listes repliables */}
         <div className="mt-16 pt-12 border-t border-slate-900">
           <h3 className="text-white font-black uppercase text-[10px] tracking-[0.2em] mb-6">Index géographique – Cas pratiques par ville</h3>
-          <p className="text-slate-500 text-xs mb-6 max-w-2xl">
-            Pages dédiées assainissement et cas pratiques pour chaque commune du Var (83) et du Val-d'Oise (95). Cliquez sur une ville pour accéder aux études de cas et guides SPANC.
+          <p className="text-slate-500 text-xs mb-4 max-w-2xl">
+            Pages dédiées assainissement et cas pratiques pour chaque commune du Var (83) et du Val-d'Oise (95). Cliquez sur un département pour afficher les villes.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div>
-              <h4 className="text-brand-400 font-bold text-xs uppercase tracking-widest mb-4">Var (83)</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto">
-                {villesVar.map((v) => (
-                  <Link key={v.slug} to={`/assainissement/var/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate" title={`Cas pratiques assainissement ${v.name}`}>
-                    {v.name}
-                  </Link>
-                ))}
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="border border-slate-800 rounded-lg overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setVarOpen((o) => !o)}
+                className="w-full flex items-center justify-between gap-2 px-4 py-3 text-left text-brand-400 font-bold text-xs uppercase tracking-widest hover:bg-slate-800/50 transition-colors"
+                aria-expanded={varOpen}
+              >
+                <span>Var (83) – {villesVar.length} communes</span>
+                {varOpen ? <ChevronDown className="w-4 h-4 shrink-0" /> : <ChevronRight className="w-4 h-4 shrink-0" />}
+              </button>
+              {varOpen && (
+                <div className="px-4 pb-4 pt-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto border-t border-slate-800">
+                  {villesVar.map((v) => (
+                    <Link key={v.slug} to={`/assainissement/var/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate py-0.5" title={`Cas pratiques assainissement ${v.name}`}>
+                      {v.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
-            <div>
-              <h4 className="text-brand-400 font-bold text-xs uppercase tracking-widest mb-4">Val-d'Oise (95)</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto">
-                {villesValDoise.map((v) => (
-                  <Link key={v.slug} to={`/assainissement/val-doise/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate" title={`Cas pratiques assainissement ${v.name}`}>
-                    {v.name}
-                  </Link>
-                ))}
-              </div>
+            <div className="border border-slate-800 rounded-lg overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setValDoiseOpen((o) => !o)}
+                className="w-full flex items-center justify-between gap-2 px-4 py-3 text-left text-brand-400 font-bold text-xs uppercase tracking-widest hover:bg-slate-800/50 transition-colors"
+                aria-expanded={valDoiseOpen}
+              >
+                <span>Val-d'Oise (95) – {villesValDoise.length} communes</span>
+                {valDoiseOpen ? <ChevronDown className="w-4 h-4 shrink-0" /> : <ChevronRight className="w-4 h-4 shrink-0" />}
+              </button>
+              {valDoiseOpen && (
+                <div className="px-4 pb-4 pt-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto border-t border-slate-800">
+                  {villesValDoise.map((v) => (
+                    <Link key={v.slug} to={`/assainissement/val-doise/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate py-0.5" title={`Cas pratiques assainissement ${v.name}`}>
+                      {v.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
