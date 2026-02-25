@@ -10,6 +10,7 @@ import Legal from './pages/Legal';
 import GuideList from './pages/GuideList';
 import GuidePost from './pages/GuidePost';
 import Fonctionnement from './pages/Fonctionnement';
+import VilleCasPratiques from './pages/VilleCasPratiques';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/normes-spanc" element={<NormesSpanc />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/cas-pratiques" element={<CasPratiques />} />
+          <Route path="/assainissement/:dep/:villeSlug" element={<VilleCasPratiques />} />
           <Route path="/guides-techniques" element={<GuideList />} />
           <Route path="/guides-techniques/:slug" element={<GuidePost />} />
           <Route path="/a-propos" element={<About />} />

@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Droplets } from 'lucide-react';
+import { getVillesByDepartment } from '../data/villesGeo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const villesVar = getVillesByDepartment('var');
+  const villesValDoise = getVillesByDepartment('val-doise');
 
   return (
     <footer className="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
@@ -48,6 +51,36 @@ export function Footer() {
               <li><Link to="/mentions-legales" className="hover:text-brand-400 transition-colors">Mentions Légales</Link></li>
               <li><a href="mailto:contact@centrenational-assainissement.fr" className="hover:text-brand-400 transition-colors">Contact Expert</a></li>
             </ul>
+          </div>
+        </div>
+
+        {/* Index géographique Var & Val-d'Oise – pages cas pratiques par ville */}
+        <div className="mt-16 pt-12 border-t border-slate-900">
+          <h3 className="text-white font-black uppercase text-[10px] tracking-[0.2em] mb-6">Index géographique – Cas pratiques par ville</h3>
+          <p className="text-slate-500 text-xs mb-6 max-w-2xl">
+            Pages dédiées assainissement et cas pratiques pour chaque commune du Var (83) et du Val-d'Oise (95). Cliquez sur une ville pour accéder aux études de cas et guides SPANC.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div>
+              <h4 className="text-brand-400 font-bold text-xs uppercase tracking-widest mb-4">Var (83)</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto">
+                {villesVar.map((v) => (
+                  <Link key={v.slug} to={`/assainissement/var/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate" title={`Cas pratiques assainissement ${v.name}`}>
+                    {v.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 className="text-brand-400 font-bold text-xs uppercase tracking-widest mb-4">Val-d'Oise (95)</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5 max-h-64 overflow-y-auto">
+                {villesValDoise.map((v) => (
+                  <Link key={v.slug} to={`/assainissement/val-doise/${v.slug}`} className="text-xs hover:text-brand-400 transition-colors truncate" title={`Cas pratiques assainissement ${v.name}`}>
+                    {v.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
