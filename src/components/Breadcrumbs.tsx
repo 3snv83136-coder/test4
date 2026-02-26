@@ -34,23 +34,25 @@ export function Breadcrumbs() {
     return routeNames[value] || value;
   };
 
+  const restItems = ville
+    ? [
+        { '@type': 'ListItem' as const, position: 2, name: 'Cas Pratiques', item: `${SITE_URL}/cas-pratiques` },
+        { '@type': 'ListItem' as const, position: 3, name: getDepartmentLabel(dep!), item: `${SITE_URL}/assainissement/${dep}` },
+        { '@type': 'ListItem' as const, position: 4, name: ville.name, item: `${SITE_URL}${location.pathname}` },
+      ]
+    : pathnames.map((value, index) => ({
+        '@type': 'ListItem' as const,
+        position: index + 2,
+        name: getRouteName(value, index),
+        item: `${SITE_URL}/${pathnames.slice(0, index + 1).join('/')}`,
+      }));
+
   const breadcrumbListJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${SITE_URL}/` },
-      ...(ville
-        ? [
-            { '@type': 'ListItem', position: 2, name: 'Cas Pratiques', item: `${SITE_URL}/cas-pratiques` },
-            { '@type': 'ListItem', position: 3, name: getDepartmentLabel(dep!), item: `${SITE_URL}/assainissement/${dep}` },
-            { '@type': 'ListItem', position: 4, name: ville.name, item: `${SITE_URL}${location.pathname}` },
-          ]
-        : pathnames.map((value, index) => ({
-            '@type': 'ListItem' as const,
-            position: index + 2,
-            name: getRouteName(value, index),
-            item: `${SITE_URL}/${pathnames.slice(0, index + 1).join('/')}`,
-          })),
+      ...restItems,
     ],
   };
 
