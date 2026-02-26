@@ -59,8 +59,8 @@ export function FloatingCTA() {
               {isSubmitted ? (
                 <div className="py-8 text-center animate-in fade-in zoom-in duration-300">
                   <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto mb-4" />
-                  <h4 className="font-bold text-slate-900 mb-1">Demande reçue !</h4>
-                  <p className="text-xs text-slate-500">Un expert vous rappelle dans moins de 5 minutes.</p>
+                  <h4 className="font-bold text-slate-900 mb-1">Demande envoyée !</h4>
+                  <p className="text-xs text-slate-500">Votre demande a bien été reçue. Un expert vous rappellera rapidement.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -93,7 +93,7 @@ export function FloatingCTA() {
                     className="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-brand-200 active:scale-[0.98]"
                   >
                     <Send className="w-4 h-4" />
-                    Être rappelé maintenant
+                    Être rappelé
                   </button>
                   <p className="text-[9px] text-slate-400 text-center leading-tight">
                     En validant, vous acceptez d'être rappelé par un technicien conseil en assainissement.

@@ -299,7 +299,7 @@ export default function Home() {
                 </div>
                 <div className="text-sm">
                   <div className="font-bold">Experts disponibles</div>
-                  <div className="text-brand-400 text-xs">Rappel en moins de 5 min</div>
+                  <div className="text-brand-400 text-xs">Rappel sous 5 min</div>
                 </div>
               </div>
             </div>
@@ -348,11 +348,11 @@ export default function Home() {
                     disabled={isSubmitting}
                     className="w-full bg-brand-600 hover:bg-brand-700 text-white font-black py-4 rounded-xl transition-all shadow-lg shadow-brand-900/20 flex items-center justify-center gap-3 group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Envoi en cours...' : 'Demander un rappel immédiat'}
+                    {isSubmitting ? 'Envoi en cours...' : 'Demander un rappel'}
                     {!isSubmitting && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
                   </button>
                   <p className="text-[10px] text-slate-400 text-center">
-                    Service gratuit réservé aux particuliers. Vos données sont protégées.
+                    Les coordonnées arrivent directement sur notre boîte mail. Service gratuit.
                   </p>
                 </form>
               )}
