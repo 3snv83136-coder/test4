@@ -570,6 +570,157 @@ export const guides: Guide[] = [
     ],
     keyTakeaways: ["Les bactéries du yaourt ne sont pas adaptées", "Astuce inoffensive mais inefficace", "Privilégier les activateurs spécifiques"],
     faq: [{ question: "Et la levure de boulanger ?", answer: "Même constat. La levure (Saccharomyces cerevisiae) n'est pas la souche bactérienne dont la fosse a besoin pour dégrader les matières organiques." }]
+  },
+  // --- Long tail Var (83) – SEO local / géolocalisé ---
+  {
+    id: "24",
+    title: "Vidange fosse septique Var : prix 2026 et entreprises agréées (83)",
+    slug: "vidange-fosse-septique-var-prix-entreprises-agreees-83",
+    description: "Tarifs vidange fosse septique dans le Var, liste des vidangeurs agréés par département, et obligations SPANC pour les communes du 83.",
+    category: "Var (83)",
+    author: "Équipe Technique Var",
+    date: "2026-02-25",
+    readTime: "6 min",
+    content: "",
+    sections: [
+      {
+        title: "Prix moyen d'une vidange dans le Var",
+        content: "<p>Dans le Var (83), le coût d'une vidange de fosse septique ou toutes eaux varie entre <strong>250€ et 450€</strong> selon la capacité (3 à 5 m³), l'accessibilité du regard et la commune (Toulon, Draguignan, Fréjus, Hyères…). Les entreprises agréées par la préfecture appliquent des tarifs encadrés ; demandez toujours un bon de vidange pour le SPANC.</p>"
+      },
+      {
+        title: "Où trouver un vidangeur agréé dans le Var ?",
+        content: "<p>Seuls les vidangeurs agréés par le préfet du Var peuvent évacuer les matières vers les stations de traitement agréées (ex. STEP). Consultez la liste tenue par la DDPP du Var ou votre SPANC (syndicat ou commune). Les professionnels de la côte (Saint-Raphaël, Sainte-Maxime, Cogolin) et de l'arrière-pays (Brignoles, Lorgues) sont référencés sur demande au SPANC 83.</p>"
+      },
+      {
+        title: "Fréquence recommandée dans le Var",
+        content: "<p>La réglementation impose une vidange <strong>tous les 4 ans minimum</strong> (ou selon préconisation du SPANC après contrôle). En terrain sableux ou à forte utilisation (résidence secondaire en été), un entretien tous les 2 à 3 ans peut être recommandé par votre SPANC varois.</p>"
+      }
+    ],
+    keyTakeaways: ["Prix type Var : 250€–450€ selon capacité et accès", "Vidangeur agréé obligatoire (liste DDPP/SPANC 83)", "Vidange tous les 4 ans minimum, bon à conserver"],
+    faq: [
+      { question: "Le SPANC du Var peut-il imposer une vidange plus fréquente ?", answer: "Oui. Après contrôle, le SPANC peut exiger une vidange dans un délai plus court si le niveau de boues est trop élevé." },
+      { question: "Où est traitée la vidange des fosses dans le Var ?", answer: "Les matières sont acheminées vers des centres de traitement agréés (STEP ou centres dédiés). Le vidangeur doit remettre un bordereau de suivi." }
+    ]
+  },
+  {
+    id: "25",
+    title: "Contrôle SPANC Var (83) : délais, tarifs et communes",
+    slug: "controle-spanc-var-83-delais-tarifs-communes",
+    description: "Tout sur le contrôle assainissement non collectif dans le Var. Délais de passage, grille tarifaire 83, et démarches par commune (Toulon, Draguignan, Fréjus…).",
+    category: "Var (83)",
+    author: "Équipe Technique Var",
+    date: "2026-02-25",
+    readTime: "7 min",
+    content: "",
+    sections: [
+      {
+        title: "Qui fait le SPANC dans le Var ?",
+        content: "<p>Dans le Var, le contrôle de l'assainissement non collectif est assuré soit par des <strong>SPANC communaux</strong>, soit par des <strong>syndicats intercommunaux</strong> (ex. SIVOM). Chaque commune du 83 est rattachée à un SPANC ; en cas de vente, le diagnostic est obligatoire et doit dater de moins de 3 ans.</p>"
+      },
+      {
+        title: "Tarifs des contrôles SPANC Var",
+        content: "<p>Les tarifs du contrôle SPANC dans le Var varient selon les secteurs : comptez en moyenne <strong>150€ à 250€</strong> pour un contrôle de conformité (visite de l'installation + rapport). La redevance annuelle d'assainissement (part ANC) est fixée par la collectivité ; elle apparaît sur la taxe foncière ou la facture d'eau.</p>"
+      },
+      {
+        title: "Délais et mise en conformité dans le 83",
+        content: "<p>En cas de non-conformité, le SPANC du Var fixe un délai pour les travaux (souvent 1 à 4 ans selon la gravité). Les communes du littoral (Fréjus, Saint-Raphaël, Hyères) et de l'intérieur (Brignoles, Draguignan, Lorgues) appliquent les mêmes règles issues du Code de la santé publique.</p>"
+      }
+    ],
+    keyTakeaways: ["SPANC communal ou intercommunal dans tout le Var", "Contrôle type : 150€–250€ selon secteur", "Délai de mise en conformité fixé par le SPANC 83"],
+    faq: [
+      { question: "Comment connaître mon SPANC dans le Var ?", answer: "Votre mairie ou le site du syndicat des eaux de votre secteur indique le SPANC compétent pour votre commune (83)." },
+      { question: "Le contrôle SPANC est-il obligatoire à la vente dans le Var ?", answer: "Oui. Un diagnostic ANC de moins de 3 ans est obligatoire pour toute vente d'un bien non raccordé au tout-à-l'égout dans le 83." }
+    ]
+  },
+  {
+    id: "26",
+    title: "Fosse septique terrain pentu Var : solutions et normes (83)",
+    slug: "fosse-septique-terrain-pentu-var-solutions-normes-83",
+    description: "Installer ou réhabiliter une fosse septique sur un terrain en pente dans le Var. Contraintes, solutions techniques (relevage, épandage en dérivation) et avis SPANC 83.",
+    category: "Var (83)",
+    author: "Équipe Technique Var",
+    date: "2026-02-25",
+    readTime: "8 min",
+    content: "",
+    sections: [
+      {
+        title: "Les contraintes du relief varois",
+        content: "<p>Dans le Var, de nombreuses parcelles sont en pente (arrière-pays, côteaux). Pour une fosse toutes eaux, la sortie doit être <strong>en contrebas</strong> de l'entrée pour assurer l'écoulement gravitaire. Si la pente est trop forte, un poste de relevage peut être nécessaire entre la fosse et l'épandage ; le SPANC du 83 valide au cas par cas.</p>"
+      },
+      {
+        title: "Épandage en dérivation et pente",
+        content: "<p>L'épandage doit être implanté sur un sol en pente faible (&lt; 5 %) pour éviter le ruissellement. En terrain pentu dans le Var, les drains peuvent être disposés en dérivation (en courbes de niveau) plutôt qu'en ligne. La filière compacte (filtre à sable, filtre coco) est parfois retenue quand la surface plane est limitée.</p>"
+      },
+      {
+        title: "Cas concret : réhabilitation à Bormes-les-Mimosas",
+        content: "<p><em>Maison en pente, vue mer.</em> La fosse existante était en amont ; l'épandage en aval saturait par temps de pluie. <strong>Solution validée SPANC Var :</strong> pose d'une micro-station en remplacement, avec rejet en bas de pente vers une zone d'épandage rétrécie mais suffisante. Devis : 9 200€ (subvention ANAH partielle).</p>"
+      }
+    ],
+    keyTakeaways: ["Écoulement gravitaire obligatoire fosse → épandage", "Poste de relevage possible si pente forte (accord SPANC 83)", "Épandage en courbes de niveau ou filière compacte selon terrain"],
+    faq: [
+      { question: "Peut-on mettre la fosse en bas de pente dans le Var ?", answer: "Oui, si les eaux usées sont relevées depuis la maison jusqu'à la fosse par une pompe de relevage adaptée (norme NF)." },
+      { question: "Quelle pente max pour un épandage dans le 83 ?", answer: "En pratique, une pente inférieure à 5 % est recommandée. Au-delà, le SPANC Var peut exiger une étude de sol et un dimensionnement spécifique." }
+    ]
+  },
+  {
+    id: "27",
+    title: "Installation fosse septique Var : devis et réglementation (83)",
+    slug: "installation-fosse-septique-var-devis-reglementation-83",
+    description: "Construire ou remplacer une fosse septique dans le Var. Étude de sol, choix de filière, démarches SPANC 83 et fourchettes de prix par type d'installation.",
+    category: "Var (83)",
+    author: "Équipe Technique Var",
+    date: "2026-02-25",
+    readTime: "7 min",
+    content: "",
+    sections: [
+      {
+        title: "Démarches avant travaux dans le Var",
+        content: "<p>Avant toute installation ou réhabilitation d'un ANC dans le Var, vous devez déposer une <strong>demande d'installation</strong> auprès de votre SPANC (formulaire type + plan de masse + étude de sol si exigée). Le SPANC du 83 émet un avis sur la filière et l'implantation. Sans accord, les travaux ne sont pas conformes et la contre-visite sera défavorable.</p>"
+      },
+      {
+        title: "Prix d'une installation complète dans le 83",
+        content: "<p>Pour une maison de 4 à 5 EH dans le Var : <strong>fosse toutes eaux + préfiltre pouzzolane + épandage</strong>, comptez environ <strong>8 000€ à 14 000€</strong> (terrain favorable). Micro-station : 10 000€ à 16 000€. Filtre compact : 9 000€ à 15 000€. Les prix varient selon l'accessibilité (îles, côteaux) et la nature du sol (sable, argile, roche).</p>"
+      },
+      {
+        title: "Étude de sol et filière adaptée au Var",
+        content: "<p>En sol sableux (littoral varois), l'épandage classique est souvent possible. En sol argileux ou à faible perméabilité (arrière-pays), le SPANC 83 peut imposer une filière compacte (filtre à sable, coco) ou une micro-station avec rejet en irrigation. L'étude de sol (type G1 ou G2) est souvent demandée pour les installations neuves.</p>"
+      }
+    ],
+    keyTakeaways: ["Demande SPANC obligatoire avant travaux dans le Var", "Devis type 83 : 8 000€–14 000€ fosse + épandage", "Étude de sol souvent requise pour filière adaptée"],
+    faq: [
+      { question: "Faut-il un architecte pour une fosse dans le Var ?", answer: "Non, mais un bureau d'études ou un installateur agréé peut rédiger le dossier SPANC. Pour une construction neuve, le plan d'assainissement est intégré au permis." },
+      { question: "Quelle fosse choisir en sol sableux dans le 83 ?", answer: "Fosse toutes eaux + préfiltre + épandage traditionnel convient en sol sableux. Le SPANC Var valide selon la surface disponible et le nombre d'EH." }
+    ]
+  },
+  {
+    id: "28",
+    title: "Réhabilitation fosse septique Var : aides et professionnels (83)",
+    slug: "rehabilitation-fosse-septique-var-aides-professionnels-83",
+    description: "Mettre aux normes une vieille fosse septique dans le Var. Aides ANAH, MaPrimeRénov', prêt à taux zéro, et choix d'un installateur agréé dans le 83.",
+    category: "Var (83)",
+    author: "Équipe Technique Var",
+    date: "2026-02-25",
+    readTime: "6 min",
+    content: "",
+    sections: [
+      {
+        title: "Aides financières pour l'ANC dans le Var",
+        content: "<p>Dans le Var (83), la réhabilitation d'une fosse septique non conforme peut être éligible à <strong>MaPrimeRénov'</strong> (sous conditions de ressources et de performance du projet), à l'<strong>ANAH</strong> (habitat indigne ou décent), et au <strong>prêt à taux zéro (PTZ)</strong> si travaux lourds. Certaines communes ou EPCI du Var ajoutent des subventions locales ; renseignez-vous en mairie.</p>"
+      },
+      {
+        title: "Choisir un installateur agréé dans le 83",
+        content: "<p>Les installateurs d'ANC dans le Var doivent être qualifiés (label Qualité Assainissement ou reconnu par les fabricants). Pour une micro-station, le contrat d'entretien est souvent obligatoire. Demandez plusieurs devis (Toulon, Draguignan, Fréjus, Brignoles) et vérifiez que le professionnel travaille avec le SPANC pour la conception et la contre-visite.</p>"
+      },
+      {
+        title: "Étapes : de la mise en demeure au certificat de conformité",
+        content: "<p>Après contrôle SPANC défavorable dans le Var, vous recevez un rapport avec délai de travaux. Une fois les travaux réalisés, vous demandez une <strong>contre-visite SPANC</strong>. Si tout est conforme, le SPANC 83 délivre le certificat de conformité. Conservez-le pour toute revente ou assurance.</p>"
+      }
+    ],
+    keyTakeaways: ["MaPrimeRénov' et ANAH peuvent financer la réhabilitation dans le Var", "Installateur qualifié et accord SPANC 83 indispensables", "Contre-visite SPANC pour obtenir le certificat de conformité"],
+    faq: [
+      { question: "MaPrimeRénov' couvre-t-elle la fosse septique dans le Var ?", answer: "Oui, sous conditions (résidence principale, revenus, nature des travaux). Le montant dépend du bouquet de travaux et des plafonds." },
+      { question: "Combien coûte une réhabilitation complète dans le 83 ?", answer: "Comptez 6 000€ à 12 000€ pour un remplacement fosse + épandage, selon accès et filière. Les aides peuvent couvrir 20 à 50 % du coût." }
+    ]
   }
 ];
 
@@ -624,4 +775,9 @@ export const longTailKeywords = [
   "epandage fosse septique terrain argileux",
   "tertio fosse septique",
   "lit d'epandage a faible profondeur",
+  "vidange fosse septique var prix 83",
+  "controle spanc var delais tarifs communes",
+  "fosse septique terrain pentu var",
+  "installation fosse septique var devis 83",
+  "rehabilitation fosse septique var aides",
 ];

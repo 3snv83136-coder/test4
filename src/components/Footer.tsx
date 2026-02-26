@@ -121,6 +121,11 @@ export function Footer() {
             <Link to="/guides-techniques/gaz-toxique-fosse-septique-h2s-danger" className="text-xs hover:text-brand-400 transition-colors">Danger gaz H2S</Link>
             <Link to="/guides-techniques/planter-au-dessus-epandage-quelles-plantes" className="text-xs hover:text-brand-400 transition-colors">Plantes sur épandage</Link>
             <Link to="/guides-techniques/contre-visite-spanc-prix-deroulement" className="text-xs hover:text-brand-400 transition-colors">Contre-visite SPANC</Link>
+            <Link to="/guides-techniques/vidange-fosse-septique-var-prix-entreprises-agreees-83" className="text-xs hover:text-brand-400 transition-colors">Vidange fosse septique Var (83)</Link>
+            <Link to="/guides-techniques/controle-spanc-var-83-delais-tarifs-communes" className="text-xs hover:text-brand-400 transition-colors">SPANC Var délais et tarifs</Link>
+            <Link to="/guides-techniques/fosse-septique-terrain-pentu-var-solutions-normes-83" className="text-xs hover:text-brand-400 transition-colors">Fosse terrain pentu Var</Link>
+            <Link to="/guides-techniques/installation-fosse-septique-var-devis-reglementation-83" className="text-xs hover:text-brand-400 transition-colors">Installation fosse Var (83)</Link>
+            <Link to="/guides-techniques/rehabilitation-fosse-septique-var-aides-professionnels-83" className="text-xs hover:text-brand-400 transition-colors">Réhabilitation fosse Var aides</Link>
           </div>
         </div>
 
