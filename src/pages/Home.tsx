@@ -73,7 +73,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col md:flex-row md:items-center gap-8">
             <p className="text-2xl text-slate-600 leading-relaxed font-light max-w-2xl m-0">
-              L'autorité technique sur l'assainissement individuel. Comprendre, diagnostiquer et entretenir votre installation avec une précision d'expert.
+              Ce qu'il faut savoir sur l'installation et le fonctionnement d'une fosse septique
             </p>
             <div className="flex-shrink-0 bg-white p-4 rounded-2xl border border-slate-200 shadow-xl shadow-slate-100 flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
